@@ -28,7 +28,7 @@ export default function OrderNowModal({ isOpen, onClose, productName }) {
     setSubmitting(true);
     setSuccess(false);
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbxOQH1JsRnlIQrCBglyeDqS8clhcSt8NZbhU_IIU4fBKflFn46zwCIt0mQ0Nf-LkKQC/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbyopTtHYUZG36XkqNFlz07dni9qklpaqdIHRlefjoEgTIFfaE88itFcKBB9jVhAETvcQQ/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: {

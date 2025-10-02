@@ -1,106 +1,152 @@
 import React from 'react';
-import { Instagram, MessageCircle, Facebook } from 'lucide-react';
+import { ArrowUp, MessageCircle, Heart } from 'lucide-react';
 
 export const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <footer className="bg-background border-t">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Business Info */}
-            <div className="space-y-4">
-              <h3 className="text-lg font-bold bg-gradient-to-r from-amber-700 via-yellow-600 to-amber-800 bg-clip-text text-transparent">
-                Karthik Wooden Works
-              </h3>
-              <p className="text-sm text-muted-foreground max-w-xs">
-                High Quality Wooden Works at Low Prices
-              </p>
+    <footer className="bg-gradient-to-b from-gray-900 to-[#151a23] border-t border-gray-800">
+      {/* Main Footer Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          {/* Company Info */}
+          <div className="md:col-span-2">
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Karthik Wood Works
+            </h3>
+            <p className="text-gray-300 mb-4 max-w-md leading-relaxed">
+              Crafting beautiful, durable wooden furniture with traditional craftsmanship 
+              and modern precision. Your trusted partner for quality woodworks.
+            </p>
+            <div className="flex items-center text-gray-400 text-sm">
+              <Heart className="h-4 w-4 mr-1 text-red-400" />
+              <span>Made with passion in India</span>
             </div>
+          </div>
 
-            {/* Quick Links */}
-            <div className="space-y-4">
-              <h4 className="text-sm font-semibold">Quick Links</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="/" className="hover:text-amber-700 transition-colors">Home</a></li>
-                <li><a href="/about" className="hover:text-amber-700 transition-colors">About</a></li>
-                <li><a href="/products" className="hover:text-amber-700 transition-colors">Products</a></li>
-                <li><a href="/services" className="hover:text-amber-700 transition-colors">Services</a></li>
-                <li><a href="/contact" className="hover:text-amber-700 transition-colors">Contact</a></li>
-              </ul>
-            </div>
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
+            <ul className="space-y-3">
+              {[
+                { name: 'Home', href: '/' },
+                { name: 'About', href: '/about' },
+                { name: 'Services', href: '/services' },
+                { name: 'Gallery', href: '/gallery' },
+                { name: 'Contact', href: '/contact' }
+              ].map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="text-gray-300 hover:text-amber-400 transition-colors duration-200 text-sm"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            {/* Social Media */}
-            <div className="space-y-4">
-              <h4 className="text-sm font-semibold">Follow Us</h4>
-              <div className="flex space-x-4">
-                <a 
-                  href="#instagram" 
-                  className="p-2 rounded-full bg-muted hover:bg-amber-100 dark:hover:bg-amber-900 transition-colors group"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="h-4 w-4 text-muted-foreground group-hover:text-amber-700 transition-colors" />
-                </a>
-                <a 
-                  href="#whatsapp" 
-                  className="p-2 rounded-full bg-muted hover:bg-green-100 dark:hover:bg-green-900 transition-colors group"
-                  aria-label="WhatsApp"
-                >
-                  <MessageCircle className="h-4 w-4 text-muted-foreground group-hover:text-green-600 transition-colors" />
-                </a>
-                <a 
-                  href="#facebook" 
-                  className="p-2 rounded-full bg-muted hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors group"
-                  aria-label="Facebook"
-                >
-                  <Facebook className="h-4 w-4 text-muted-foreground group-hover:text-blue-600 transition-colors" />
-                </a>
-              </div>
-            </div>
+          {/* Legal */}
+          <div>
+            <h4 className="text-lg font-semibold text-white mb-4">Legal</h4>
+            <ul className="space-y-3">
+              {[
+                { name: 'Privacy Policy', href: '/privacy' },
+                { name: 'Terms of Service', href: '/terms' },
+                { name: 'Return Policy', href: '/returns' },
+                { name: 'Warranty', href: '/warranty' }
+              ].map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="text-gray-300 hover:text-amber-400 transition-colors duration-200 text-sm"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t py-6">
-          <div className="flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
-            <p className="text-sm text-muted-foreground">
-              © 2024 Karthik Wooden Works. All rights reserved.
-            </p>
-            <div className="w-full relative flex flex-col items-center justify-center">
-              <div className="absolute left-1/2 top-0 -translate-x-1/2 mb-1 flex flex-col items-center group">
-                <button
-                  className="font-semibold text-amber-700 text-center focus:outline-none hover:underline"
-                  tabIndex={0}
+        {/* Contact Info */}
+        <div className="border-t border-gray-800 pt-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+            <div className="text-center md:text-left">
+              <p className="text-gray-300">📞 Call us at</p>
+              <a 
+                href="tel:+917981511748" 
+                className="text-amber-400 hover:text-amber-300 font-medium"
+              >
+                +91 79815 11748
+              </a>
+            </div>
+            <div className="text-center">
+              <p className="text-gray-300">📧 Email us at</p>
+              <a 
+                href="mailto:Karthikwoodworks47@gmail.com" 
+                className="text-amber-400 hover:text-amber-300 font-medium"
+              >
+                Karthikwoodworks47@gmail.com
+              </a>
+            </div>
+            <div className="text-center md:text-right">
+              <p className="text-gray-300">📍 Visit our workshop</p>
+              <p className="text-amber-400 font-medium">Kannapuram, Andhra Pradesh</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            {/* Copyright and Developer Credit */}
+            <div className="flex flex-col sm:flex-row items-center gap-4 text-sm">
+              <span className="text-gray-400">
+                © {currentYear} Karthik Wood Works. All rights reserved.
+              </span>
+              <div className="hidden sm:block text-gray-500">•</div>
+              <span className="text-gray-400 text-center sm:text-left">
+                Designed & Developed by{' '}
+                <a 
+                  href="https://www.linkedin.com/in/padalavamsi/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-green-400 hover:text-green-300 font-semibold transition-colors duration-200 hover:underline"
                 >
-                  Designed by Vamsi
-                </button>
-                <div className="hidden group-hover:flex group-focus-within:flex flex-col items-center mt-2 z-50 bg-white dark:bg-zinc-900 border rounded shadow-lg p-3 min-w-[180px]">
-                  <a
-                    href="https://instagram.com/vamsi_rockingstar"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-amber-700 hover:underline mb-2"
-                  >
-                    Instagram: vamsi_rockingstar
-                  </a>
-                  <a
-                    href="https://wa.me/916304497226"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-green-700 hover:underline mb-2"
-                  >
-                    WhatsApp: 6304497226
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/vamsipadala"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-blue-700 hover:underline"
-                  >
-                    LinkedIn: VamsiPadala
-                  </a>
-                </div>
-              </div>
-              <span className="text-sm text-muted-foreground text-right w-full pt-6">Crafted with love and quality this</span>
+                  Vamsi
+                </a>
+              </span>
+            </div>
+
+            {/* Action Buttons */}
+            <div className="flex items-center gap-3">
+              {/* Scroll to Top */}
+              <button
+                onClick={scrollToTop}
+                className="group bg-gray-700 hover:bg-amber-600 text-white rounded-full p-3 flex items-center justify-center transition-all duration-200 transform hover:scale-105 hover:-translate-y-0.5 shadow-lg"
+                aria-label="Scroll to top"
+              >
+                <ArrowUp className="h-5 w-5 group-hover:animate-bounce" />
+              </button>
+
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/917981511748"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-green-500 hover:bg-green-600 text-white rounded-full p-3 flex items-center justify-center transition-all duration-200 transform hover:scale-105 hover:-translate-y-0.5 shadow-lg"
+                aria-label="Contact us on WhatsApp"
+              >
+                <MessageCircle className="h-5 w-5 group-hover:animate-pulse" />
+              </a>
             </div>
           </div>
         </div>

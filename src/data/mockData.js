@@ -58,77 +58,77 @@ export const products = [
   {
     id: 9,
     name: 'Wooden Bed (King)',
-    image: 'https://images.unsplash.com/photo-1506968430777-bf7784a87f23?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHx3b29kJTIwdGFibGV8ZW58MHx8fHwxNzU5MTU1OTA3fDA&ixlib=rb-4.1.0&q=85',
+      image: 'https://images.jdmagicbox.com/quickquotes/images_main/wooden-modern-king-size-curved-bed-2227120433-9k5s5mtd.jpg',
     category: 'Bedroom',
     description: 'Luxurious king-size bed with headboard'
   },
   {
     id: 10,
     name: 'Wooden Headboard',
-    image: 'https://images.unsplash.com/photo-1626252685663-64c6bf60afb1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwyfHxjcmFmdHNtYW5zaGlwfGVufDB8fHx8MTc1OTE1NTg4NHww&ixlib=rb-4.1.0&q=85',
+      image: 'https://m.media-amazon.com/images/I/81I0BP3sXhL._UF894,1000_QL80_.jpg',
     category: 'Bedroom',
     description: 'Carved traditional headboard design'
   },
   {
     id: 11,
     name: 'Wooden Wardrobe',
-    image: 'https://images.unsplash.com/photo-1511306162219-1c5a469ab86c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwzfHxjcmFmdHNtYW5zaGlwfGVufDB8fHx8MTc1OTE1NTg4NHww&ixlib=rb-4.1.0&q=85',
+      image: 'https://ik.imagekit.io/2xkwa8s1i/img/wardrobes/r1/WWRB4DH1GINGHAMCWR1/1.jpg?tr=w-3840',
     category: 'Storage',
     description: 'Spacious wardrobe with multiple compartments'
   },
   {
     id: 12,
     name: 'Wooden Dressing Table',
-    image: 'https://images.pexels.com/photos/2166456/pexels-photo-2166456.jpeg',
+      image: 'https://kuberfurniture.com/wp-content/uploads/2024/08/Cinader-Sheesham-Wood-Dressing-Table-with-Storage-1.webp',
     category: 'Bedroom',
     description: 'Elegant dressing table with mirror'
   },
   {
     id: 13,
     name: 'Wooden Bookshelf',
-    image: 'https://images.pexels.com/photos/2344613/pexels-photo-2344613.jpeg',
+      image: 'https://www.royaloakindia.com/media/catalog/product/b/s/bs20151004_1_.jpg',
     category: 'Storage',
     description: 'Multi-tier bookshelf for your collection'
   },
   {
     id: 14,
     name: 'Wooden TV Unit',
-    image: 'https://images.pexels.com/photos/347139/pexels-photo-347139.jpeg',
+      image: 'https://www.royaloakindia.com/media/catalog/product/t/v/tv20191021_1.jpg',
     category: 'Entertainment',
     description: 'Modern TV unit with cable management'
   },
   {
     id: 15,
     name: 'Wooden Shoe Rack',
-    image: 'https://images.pexels.com/photos/269063/pexels-photo-269063.jpeg',
+      image: 'https://www.squaro.in/cdn/shop/products/61klPvS39IL._AC_UF894_1000_QL80_FMwebp.webp?v=1679055889&width=1445',
     category: 'Storage',
     description: 'Organized shoe storage solution'
   },
   {
     id: 16,
     name: 'Wooden Study Table',
-    image: 'https://images.pexels.com/photos/161758/governor-s-mansion-montgomery-alabama-grand-staircase-161758.jpeg',
+      image: 'https://ebansal.com/cdn/shop/products/Maurice_Solid_Sheesham_Wood_Study_Table_Ladder_Natural_Finish.jpg?v=1746000327',
     category: 'Office',
     description: 'Ergonomic study desk with drawers'
   },
   {
     id: 17,
     name: 'Wooden Office Chair',
-    image: 'https://images.unsplash.com/photo-1487015307662-6ce6210680f1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBmdXJuaXR1cmV8ZW58MHx8fHwxNzU5MTU1ODc3fDA&ixlib=rb-4.1.0&q=85',
+      image: 'https://m.media-amazon.com/images/I/71KHAPi2zCL.jpg',
     category: 'Office',
     description: 'Professional office chair with comfort'
   },
   {
     id: 18,
     name: 'Wooden Chest of Drawers',
-    image: 'https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHx3b29kZW4lMjBmdXJuaXR1cmV8ZW58MHx8fHwxNzU5MTU1ODc3fDA&ixlib=rb-4.1.0&q=85',
+      image: 'https://mywakeup.in/cdn/shop/files/VeridianSolidWoodChestofDrawers_2.png?v=1748580579&width=1200',
     category: 'Storage',
     description: 'Multi-drawer chest for bedroom storage'
   },
   {
     id: 19,
     name: 'Wooden Cupboard',
-    image: 'https://images.unsplash.com/photo-1577176434922-803273eba97a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwzfHx3b29kZW4lMjBmdXJuaXR1cmV8ZW58MHx8fHwxNzU5MTU1ODc3fDA&ixlib=rb-4.1.0&q=85',
+      image: 'https://5.imimg.com/data5/SELLER/Default/2023/6/319191857/DJ/UE/JB/22541315/wooden-wardrobes.jpg',
     category: 'Storage',
     description: 'Classic Indian style cupboard design'
   }
@@ -170,13 +170,13 @@ export const testimonials = [
   },
   {
     id: 2,
-    name: 'Priya Sharma',
+      name: 'Mohan Rao',
     rating: 5,
     text: 'Excellent craftsmanship and customer service. Our custom wardrobe fits perfectly in our bedroom.'
   },
   {
-    id: 3,
-    name: 'Amit Patel',
+      id: 3,
+      name: 'Ganesh',
     rating: 4,
     text: 'Great experience working with Karthik Wooden Works. Fast delivery and professional installation.'
   }
